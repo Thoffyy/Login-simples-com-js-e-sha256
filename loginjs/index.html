@@ -27,31 +27,9 @@
             <input type="password" placeholder="Digite sua senha" id="pass">
             <br>
         </div>
-    <a href="#"> Esqueci minha senha </a>
+    <a href="#" id="esqueci"> Esqueci minha senha </a>
 
-        <button class="btn" type="submit" id="confirma" onclick="    
-        var pass = document.getElementById('pass').value;
-        var hash = 'b7e94be513e96e8c45cd23d162275e5a12ebde9100a425c4ebcdd7fa4dcd897c';
-    
-        if (hash === sha256(pass)) {
-            window.alert('senha correta');
-        } else {
-            window.alert('senha incorreta');
-        }
-
-        var user = document.getElementById('user').value;
-        var hash = '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918';
-    
-        if (hash === sha256(user)) {
-            window.alert('Bem vindo');
-        } else {
-            window.alert('Usuario nao existente');
-        }
-
-
-
-    " > Enviar</button>
-
+        <button class="btn" type="submit" id="confirma" onclick="fazerLogin()" > Enviar</button>
 
     </div>
 </div>
