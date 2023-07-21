@@ -18,20 +18,31 @@ function fazerLogin() {
       window.alert('Usuario nao existente');
     }
   }
-  
+
 
   function botao(){
     var op = document.getElementById('opcoes').value
+    opfim = ''
     switch(botao){
     case 1:
     
-break;
+ break;
     case 2:
     
-break; 
+ break; 
     case 3:
     
-break;
+ break;
   
   }
 }
+
+const chk = document.getElementById('chk')
+
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark')
+})
+
+
+//inside.js abaixo:
+
